@@ -1,0 +1,37 @@
+{
+    "todohighlight.isEnable": true,
+    "todohighlight.keywords": [
+        "DEBUG:",
+        "REVIEW:",
+        {
+            "text": "NOTE:",
+            "color": "#fff",
+            "backgroundColor": "#645EC9"
+        },
+        {
+            "text": "INFO:",
+            "color": "#fff",
+            "backgroundColor": "#FFAC5A"
+        },
+        {
+            "text": "FIX:",
+            "color": "#fff",
+            "backgroundColor": "#F35C79"
+        },
+        {
+            "text": "DEPRECATED:",
+            "color": "#fff",
+            "backgroundColor": "#F35C79"
+        },
+        {
+            "text": "WARN:",
+            "color": "#fff",
+            "backgroundColor": "#F35C79"
+        },
+        {
+            "text": "!REF:",
+            "color": "#fff",
+            "backgroundColor": "#5ADD53",
+        },
+    ],
+}

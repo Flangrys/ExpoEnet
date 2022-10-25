@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+
 /*!
  * Flans v0.0.2
  * MIT License
@@ -14,7 +16,7 @@
 
   --pr-v-dark-blue: hsl(226, 43%, 10%);
   --pr-dark-blue: hsl(235, 46%, 20%);
-  --pr-d-blue: hsl(235, 45%, 61%);
+  --pr-light-blue: hsl(235, 45%, 61%);
   --pr-pastel-blue: hsl(236, 100%, 87%);
 
   --pr-primary: rgba(97, 218, 251, 0.7);
@@ -27,13 +29,13 @@
 
   --pr-white: rgb(249, 249, 249);
   --pr-blue: rgb(88, 71, 235);
-  --pr-light-red: rgb(255, 140, 102);
+  --pr-light-orange: rgb(255, 140, 102);
   --pr-soft-blue: rgb(86, 194, 230);
   --pr-lime-green: rgb(74, 207, 129);
   --pr-violet: rgb(117, 54, 211);
   --pr-soft-orange: rgb(241, 198, 91);
 
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif !important;
+  font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -48,22 +50,28 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* Section: Identificators */
+
 #root {
   background: linear-gradient(180deg, var(--pr-white), var(--pr-pth-color));
 }
 
+/* Section: Elements */
+
 body {
   margin: 0;
+
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 a {
   font-weight: 500;
-  color: var(--pr-info);
+  color: var(--pr-info) !important;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: var(--pr-blue);
+  color: var(--pr-blue) !important;
 }
 
 
@@ -102,6 +110,33 @@ button:focus-visible {
 
 }
 
+/* Section: Classes */
+
 .void-space {
   padding-right: 5px;
 }
+
+.box-primary:hover {
+  border-color: var(--pr-violet);
+  border-radius: 2rem;
+}
+
+.bx-bg-1 {
+  background-color: var(--pr-pastel-blue);
+}
+
+.bx-bg-primary {
+  background: linear-gradient(180deg, var(--pr-primary), var(--pr-light));
+}
+
+.bx-transition-bg-1 {
+  -webkit-transition: background-color .4s ease-out;
+  -moz-transition: background-color .4s ease-out;
+  -o-transition: background-color .4s ease-out;
+  transition: background-color .4s ease-out;
+}
+
+.bx-transition-bg-1:hover {
+  background-color: var(--pr-pastel-blue);
+}
+

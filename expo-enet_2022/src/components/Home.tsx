@@ -7,7 +7,9 @@ function HomeComponent() {
             <div className="container">
                 <CommonNavbar/>
 
-                
+                <div className="container bx-bg-1">
+                    <h1>Algo</h1>
+                </div>
 
                 <CommonFooter/>
             </div>

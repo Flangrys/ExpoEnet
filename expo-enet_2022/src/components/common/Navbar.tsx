@@ -1,10 +1,11 @@
-export default function CommonNavbar() {
+function CommonNavbar() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg border-bottom">
+            
+            <nav className="navbar navbar-expand-lg border-bottom mb-4">
                 <div className="container-fluid">
-                    <a href="/" className="navbar-brand">
-                        <img src="/favicon.png" alt="APP_BRAND_LOGO" className="d-inline-block align-text-top" width="30" height="30" />
+                    <a href="/" className="navbar-brand box-primary">
+                        <img src="/favicon.png" alt="APP_BRAND_LOGO" className="d-inline-block" width="30" height="45" />
                         <span className="void-space"></span>
                         Expo 2022
                     </a>
@@ -15,18 +16,18 @@ export default function CommonNavbar() {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
+                    <ul className="navbar-nav text-center align-items-center">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
+                            <a className="nav-link" href="/economia">Economia</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
+                            <a className="nav-link" href="/ingles">Ingles</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link disabled">Disabled</a>
+                            <a className="nav-link disabled">Programacion</a>
                         </li>
                     </ul>
                 </div>
@@ -34,3 +35,5 @@ export default function CommonNavbar() {
         </>
     )
 }
+
+export default CommonNavbar

@@ -1,16 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
-import AppEconomia from "../components/AppEconomia";
-import AppIngles from "../components/AppIngles";
 
-import Error from "../components/err/error";
-import Home from "../components/Home";
+import AppEconomia from "../app/AppEconomia";
+import AppIngles from "../app/AppIngles";
 
+import ErrorView from "../views/ErrorView";
+import HomeView from "../views/HomeView";
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home/>,
-        errorElement: <Error/>
+        element: <HomeView/>,
+        errorElement: <ErrorView/>
     },
     {
         path: '/economia',
@@ -18,6 +18,12 @@ export const router = createBrowserRouter([
     },
     {
         path: '/ingles',
-        element: <AppIngles/>
+        element: <AppIngles/>,
+        children: [
+            {
+                path: 'MemoryGame',
+                element: <></>
+            }
+        ]
     }
 ])

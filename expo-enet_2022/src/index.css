@@ -7,33 +7,33 @@
  * MIT License
 */
 :root {
-  --pr-light: rgba(227, 227, 227, 0.87);
-  --pr-gray: rgb(136, 129, 136);
-  --pr-dark: rgb(36, 36, 36, 0.87);
+  --pr-light: #e3e3e3de;
+  --pr-gray: #888188;
+  --pr-dark: #242424de;
 
   --pr-pth-color: var(--pr-dark);
   --pr-sth-color: var(--pr-light);
 
-  --pr-v-dark-blue: hsl(226, 43%, 10%);
-  --pr-dark-blue: hsl(235, 46%, 20%);
-  --pr-light-blue: hsl(235, 45%, 61%);
-  --pr-pastel-blue: hsl(236, 100%, 87%);
+  --pr-v-dark-blue: #0f1424;
+  --pr-dark-blue: #1c1f4a;
+  --pr-light-blue: #6f76c8;
+  --pr-pastel-blue: #bdc1ff;
 
-  --pr-primary: rgba(97, 218, 251, 0.7);
-  --pr-secondary: rgb(83, 91, 242);
-  --pr-success: rgb(89, 207, 83);
-  --pr-danger: rgb(255, 229, 102);
-  --pr-warning: rgb(255, 110, 102);
-  --pr-info: rgb(100, 108, 255);
+  --pr-primary: #61dafbb3;
+  --pr-secondary: #535bf2;
+  --pr-success: #59cf53;
+  --pr-danger: #ffe566;
+  --pr-warning: #ff6e66;
+  --pr-info: #646cff;
 
 
-  --pr-white: rgb(249, 249, 249);
-  --pr-blue: rgb(88, 71, 235);
-  --pr-light-orange: rgb(255, 140, 102);
-  --pr-soft-blue: rgb(86, 194, 230);
-  --pr-lime-green: rgb(74, 207, 129);
-  --pr-violet: rgb(117, 54, 211);
-  --pr-soft-orange: rgb(241, 198, 91);
+  --pr-white: #f9f9f9;
+  --pr-blue: #5847eb;
+  --pr-light-orange: #ff8c66;
+  --pr-soft-blue: #56c2e6;
+  --pr-lime-green: #4acf81;
+  --pr-violet: #7536d3;
+  --pr-soft-orange: #f1c65b;
 
   font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
   font-size: 16px;
@@ -64,7 +64,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif !important;
 }
 
-a {
+/* a {
   font-weight: 500;
   color: var(--pr-info) !important;
   text-decoration: inherit;
@@ -92,41 +92,19 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+}*/
 
 @media (prefers-color-scheme: light) {
   :root {
     --pr-pth-color: var(--pr-light);
     --pr-sth-color: var(--pr-dark);
   }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-
 }
 
 /* Section: Classes */
 
 .void-space {
   padding-right: 5px;
-}
-
-.box-primary:hover {
-  border-color: var(--pr-violet);
-  border-radius: 2rem;
-}
-
-.bx-bg-1 {
-  background-color: var(--pr-pastel-blue);
-}
-
-.bx-bg-primary {
-  background: linear-gradient(180deg, var(--pr-primary), var(--pr-light));
 }
 
 .bx-transition-bg-1 {
@@ -140,3 +118,10 @@ button:focus-visible {
   background-color: var(--pr-pastel-blue);
 }
 
+/* TODO: Add custom `active` class or overwrite boostrap class.*/
+
+.bx-bg-cool-1 {
+  background-image: url("/custom_banner_bu_3ba.svg");
+	border: 1px;
+	border-radius: .5rem;
+}

@@ -11,11 +11,9 @@ export default function AppEconomia() {
         <>
             <div className="container">
 
-                <CommonNavbar />
+                <CommonNavbar elementActive={0} />
 
-                <main>
-                    <Jumbotron contentTitle="Algo" contentBody="algomas" imgSource="/undraw_learning_re_32qv.svg" imgAlt="algomas"></Jumbotron>
-                </main>
+                <h1>App Economia</h1>
 
                 <CommonFooter />
 

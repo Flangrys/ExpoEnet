@@ -1,15 +1,17 @@
-import Jumbotron from "./Jumbotron"
+import Jumbotron from "./common/Jumbotron"
 
 
-const jumboImg = {
-    source: "/undraw_learning_re_32qv.svg",
-    alt: "APP_LEARNING_UNDRAW"
-}
+const ExpoJumboSvg = { source: "/svg/undraw_learning_re_32qv.svg", alt: "EXPO_SVG_JUMBOTRON_IMAGE" }
 
 function HomeComponent() {
     return (
         <>
-            <Jumbotron contentTitle="Expo Enet 2022" contentBody="Dia de la educacion tecnica" img={jumboImg}/>
+            <Jumbotron header="Expo Enet 2022" body="Dia de la educacion tecnica" img={ExpoJumboSvg} btn={{
+                callback: function (): any {
+                    console.log(`[+] Button pressed.`)
+                },
+                label: "Algo"
+            }} />
         </>
     )
 }

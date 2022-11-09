@@ -22,7 +22,7 @@ class CommonNavbar extends Component<NavbarProp, {/*State*/}> {
                 <nav className="navbar navbar-expand-lg border-bottom mb-4">
                     <div className="container-fluid">
 
-                        <a href="/" className="navbar-brand">
+                        <a href="/" className="navbar-brand tx-gradient-v1">
                             <img src="/favicon.png" alt="APP_BRAND_LOGO" className="d-inline-block" width="30" height="45" />
                             <span className="void-space"></span>
                             Expo 2022

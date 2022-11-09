@@ -33,5 +33,11 @@
             "color": "#fff",
             "backgroundColor": "#5ADD53",
         },
+        {
+            "text": "@:",
+            "color": "#fff",
+            "backgroundColor": "#7536d3"
+        },
     ],
+    "svg.preview.background": "editor",
 }

@@ -4,7 +4,7 @@ import { JumbotronProp } from "../../types/Jumbotron";
 // TODO: Hacer que el componente reciva un objeto en vez de varios parametros
 // TODO: Permitir que halla un fondo atractivo como ola svg
 
-class Jumbotron extends Component<JumbotronProp> {
+class Jumbotron extends Component<JumbotronProp, {}> {
 
     constructor(props: JumbotronProp) {
         super(props)

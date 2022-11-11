@@ -1,4 +1,4 @@
-import Error from "../components/err/error"
+import Error from "../components/err/Error";
 
 export default function ErrorView() {
     return (
